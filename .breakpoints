@@ -1,0 +1,40 @@
+{
+  "files": {
+    "models/ClienteModel.py": [
+      {
+        "id": "dba26851-3dc1-42d8-a03a-61498db78612",
+        "line": 15,
+        "version": 1607,
+        "index": 405
+      }
+    ],
+    "models/PacienteModel.py": [
+      {
+        "id": "f2167c43-b724-42e0-8a6b-f7e55040455b",
+        "line": 15,
+        "version": 57,
+        "index": 355
+      },
+      {
+        "id": "227cab75-40e8-43d0-8999-41e011bebf70",
+        "line": 15,
+        "version": 57,
+        "index": 355
+      },
+      {
+        "id": "ee5d43cc-61a8-40f0-9f5a-cea195358dcc",
+        "line": 20,
+        "version": 57,
+        "index": 571
+      }
+    ],
+    "models/entities/a.py": [
+      {
+        "id": "e5e855fd-cddc-4a04-8e6a-7090e9ca9631",
+        "line": 11,
+        "version": 10,
+        "index": 172
+      }
+    ]
+  }
+}

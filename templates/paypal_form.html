@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div id="paypal-button"></div>
+
+<script src="https://www.paypalobjects.com/api/checkout.js"></script>
+
+<script>
+    var CREATE_PAYMENT_URL  = 'https://322849a8-76c0-4ca6-b4a5-0d42e602d5f2-00-2buxrp1eapygi.picard.replit.dev/paypal/payment';
+    var EXECUTE_PAYMENT_URL = 'https://322849a8-76c0-4ca6-b4a5-0d42e602d5f2-00-2buxrp1eapygi.picard.replit.dev/paypal/execute';
+
+    paypal.Button.render({
+
+        env: 'sandbox', 
+
+        commit: true, 
+
+        payment: function() {
+            return paypal.request.post(CREATE_PAYMENT_URL).then(function(data) {
+                return data.paymentID;
+            });
+        },
+
+        onAuthorize: function(data) {
+            return paypal.request.post(EXECUTE_PAYMENT_URL, {
+                paymentID: data.paymentID,
+                payerID:   data.payerID
+            }).then(function(res) {
+
+                console.log(res.success)
+
+            });
+        }
+
+    }, '#paypal-button');
+</script>
+
+
+    <!--Hacer el prodcuto quizas-->
+</body>
+</html>

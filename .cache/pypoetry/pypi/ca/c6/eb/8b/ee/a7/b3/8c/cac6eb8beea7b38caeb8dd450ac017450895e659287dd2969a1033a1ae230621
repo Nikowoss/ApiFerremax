@@ -1,0 +1,1 @@
+9999999999{"name": "psycopg2-utils", "version": "1.0.3", "summary": "Utils to use with psycopg2 such as a connection pool and cursor", "platform": "any", "requires_dist": ["psycopg2-binary"], "requires_python": ">=3.8", "files": [], "_cache_version": "1.0.0"}

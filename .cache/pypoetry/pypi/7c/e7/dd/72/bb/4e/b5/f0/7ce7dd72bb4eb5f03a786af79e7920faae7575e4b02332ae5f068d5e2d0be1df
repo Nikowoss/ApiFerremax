@@ -1,0 +1,1 @@
+9999999999{"name": "consultor", "version": "0.2.0", "summary": "Consultor te ayuda a explorar las diferentes carreras y cursos que las universidades ofrecen", "platform": "any", "requires_dist": ["beautifultable", "pymongo"], "requires_python": "", "files": [], "_cache_version": "1.0.0"}
